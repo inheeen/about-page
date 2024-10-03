@@ -1,0 +1,443 @@
+@import "normalizez.scss"
+@import "resets.scss"
+@font-face
+    font-family: "intel"
+    src: url("../fonts/intelone-mono-font-family-regular.otf")
+@font-face
+    font-family: "display"
+    src: url("../fonts/SF-Pro-Display-Regular.otf")
+@font-face
+    font-family: "wes"
+    src: url("../fonts/copperplate-gothic-bold2.ttf")
+$black: #2E2E2E
+
+body
+    //background-color: #B5B495
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0px
+    padding-left: 15px
+    padding-right: 15px
+
+.text
+    font-family: "display"
+    font-size: 20px
+.info-box
+    width: 420px
+    height: 322px
+.bgc
+    background: url("../img/bgc.png") center
+    background-repeat: round
+    background-size: contain
+    z-index: 1
+
+.circle
+    width: 12px
+    height: 12px
+    border-radius: 100px
+
+.second-btn
+    border: 1px solid $black
+    border-radius: 100px
+    background-color: transparent
+    &:hover
+        text-decoration: underline
+
+.line
+    border-top: 4px dotted $black
+   
+
+.main-section
+    &__nav-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        z-index: 1
+        margin-bottom: 100px
+        font-family: "display"
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img
+        margin-bottom: 24px
+    &__title
+        font-family: "intel"
+        font-size: 64px
+        margin-bottom: 24px
+    &__text
+        max-width: 500px
+        text-align: center
+        font-size: 18px
+        line-height: 26px
+        font-family: "display"
+        margin-bottom: 96px
+    &__line
+        margin-bottom: 96px
+
+.nav-link
+    cursor: pointer
+    &:hover
+        text-decoration: underline $black
+
+.cart-container
+    &__btn
+        width: 94px
+        height: 38px
+    &__link
+        text-decoration: none
+    &__text
+        font-size: 12px
+        text-transform: uppercase
+        font-family: "display"
+        color: $black
+
+.nav-item
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 40px
+    &__circle-one
+        background-color: #009959
+    &__circle-two
+        background-color: #C10000
+    &__circle-three
+        background-color: #0050EA
+    &__circle-four
+        background-color: #F5ED56
+
+.navbar
+    &__text
+        color: $black
+        font-size: 12px
+        text-transform: uppercase
+        font-family: "display"
+    &__text-active
+        text-decoration: line-through
+        color: $black
+        font-size: 12px
+        text-transform: uppercase
+        font-family: "display"
+   
+.second-section
+    &__text
+        padding-left: 120px
+    &__name
+        padding-left: 120px
+        margin-bottom: 36px
+    &__second-text
+        max-width: 700px
+        margin-bottom: 64px
+        padding-left: 120px
+    &__third-text
+        max-width: 700px
+        margin-bottom: 64px
+        padding-left: 120px
+    &__four-text
+        padding-left: 120px
+    &__five-text
+        padding-left: 120px
+        margin-bottom: 96px
+
+.color-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 84px
+    &__text
+        text-transform: uppercase
+    &__first-item
+        width: 300px
+        height: 300px
+        border-radius: 400px
+        border: none
+        background-color: #FFE0C4
+        display: flex
+        justify-content: center
+        align-items: center
+    &__second-item
+        width: 300px
+        height: 300px
+        border-top-right-radius: 400px
+        border-bottom-right-radius: 400px
+        border: none
+        background-color: #F7C4FF
+        display: flex
+        justify-content: center
+        align-items: center
+    &__third-item
+        width: 300px
+        height: 300px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #C4FFF1
+
+.third-section
+    &__content-container
+        padding-top: 96px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        font-size: 48px
+        font-family: "intel"
+        margin-bottom: 96px
+    &__wrapper-box
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 40px
+    &__img
+        height: 1117px
+    &__small-info
+        width: 135px
+        height: 48px
+        background-color: #fff
+        border-radius: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+
+
+.left-wrapper
+    display: flex
+    flex-direction: column
+    &__first-box
+        background-color: #DBFFC2
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__second-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: right
+    &__third-box
+        background-color: #C4F1FF
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    &__first-section
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px
+        
+
+.small-info
+    &__last
+        margin-right: 30px
+
+.right-wrapper
+    display: flex
+    flex-direction: column
+    &__first-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: left
+    &__second-box
+        background-color: #F6B9FF
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    &__third-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: left
+    &__first-section
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px
+
+.info-box
+    margin-bottom: 60px
+    &__title
+        margin-bottom: 16px
+        font-size: 32px
+        font-family: "intel"
+    &__text
+        font-size: 20px
+        font-family: "display"
+
+.four-section
+    &__content-container
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__line
+        margin-bottom: 94px
+    &__title
+        font-family: "intel"
+        font-size: 64px
+        margin-bottom: 96px
+    &__grid-container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        justify-items: center
+        grid-row-gap: 24px
+        margin-bottom: 96px
+    &__btn
+        height: 45px
+        width: 146px
+        font-size: 12px
+        text-transform: uppercase
+        font-family: "display"
+        color: #2E2E2E
+        margin-bottom: 96px
+        
+.cart
+    background-color: #FEFEFE
+    width: 390px
+    height: 460px
+    display: flex
+    flex-direction: column
+    &__btn
+        width: 40px
+        height: 40px
+        border-radius: 100px
+        background-color: #F6F6F6
+        position: relative
+        left: 330px
+        top: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__img
+        width: 315px
+        height: 300px
+        margin-bottom: 24px
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &__name
+        margin-bottom: 24px
+        font-size: 24px
+        font-family: "intel"
+        padding-left: 12px
+    &__text
+        padding-left: 12px
+        text-transform: uppercase
+        color: rgba(46, 46, 46, 0.5)
+
+.five-section
+    &__content-container
+        display: flex
+        justify-content: center
+        align-items: center
+    &__note
+        width: 1000px
+        height: 600px
+        background: url("../img/four-section-bgc.png") center
+        background-repeat: round
+        background-size: contain
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 4px dotted
+        margin-bottom: 64px
+    &__img
+        padding-top: 96px
+        margin-bottom: 64px
+    &__title
+        font-size: 48px
+        max-width: 500px
+        text-align: center
+        font-family: "wes"
+        margin-bottom: 64px
+    &__form-box
+        display: flex
+        flex-direction: row
+        align-items: center
+        max-width: 1000px
+    &__input
+        height: 60px
+        width: 300px
+        border-radius: 4px
+        margin-right: 16px
+    &__btn
+        width: 60px
+        height: 60px
+        border-radius: 100px
+        background-color: $black
+        border: none
+
+.footer
+    background-color: #F6F6F6
+    &__content-container
+        padding-top: 90px
+    &__first-section
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        justify-items: center
+        margin-bottom: 60px
+    &__title
+        text-transform: uppercase
+        font-size: 12px
+        color: rgba(46,46 ,46 ,0.5 )
+        margin-bottom: 16px
+        font-family: "display"
+    &__text
+        font-size: 16px
+        font-family: "display"
+        margin-bottom: 13px
+    &__line
+        margin-bottom: 50px
+    &__second-section
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 48px
+    &__second-text
+        margin-bottom: 0px
+    &__btn
+        width: 145px
+        height: 46px
+        background-color: #FEFEFE
+    &__big-text
+        font-size: 64px
+        text-align: center
+        font-family: "intel"
+        max-width: 800px
+        text-transform: uppercase
+        padding-top: 164px
+        z-index: 3
+    &__third-section
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__big-img
+        position: relative
+        top: -180px
+    &__four-section
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 24px
+    &__social-box
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__networks
+        width: 32px
+        height: 32px
+        background-color: #FEFEFE
+        border-radius: 4px
+        margin-right: 16px
+        text-align: center
+        &:last-child
+            margin-right: 0px
+    &__third-text
+        margin-right: 16px
+        margin-bottom: 0px
