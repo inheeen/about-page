@@ -13,6 +13,35 @@ $black: #2E2E2E
 
 body
     //background-color: #B5B495
+.navbar
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    height: 54px
+
+.navbar-toggler
+    padding: 0px
+.container-fluid
+    padding-top: 14px
+
+.dropdown-toggle::after
+    display: none
+.dropdown-item
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 40px
+    &__circle-one
+        background-color: #009959
+    &__circle-two
+        background-color: #C10000
+    &__circle-three
+        background-color: #0050EA
+    &__circle-four
+        background-color: #F5ED56
+    &:hover
+        background-color: transparent
 
 .container
     max-width: 1140px
@@ -346,14 +375,20 @@ body
         border: 4px dotted
         margin-bottom: 64px
     &__img
-        padding-top: 96px
-        margin-bottom: 64px
+        padding-top: 66px
+        margin-bottom: 34px
     &__title
         font-size: 48px
         max-width: 500px
         text-align: center
         font-family: "wes"
+        margin-bottom: 34px
+    &__text
+        font-family: "display"
+        font-size: 48px
+        max-width: 500px
         margin-bottom: 64px
+        text-align: center
     &__form-box
         display: flex
         flex-direction: row
@@ -390,6 +425,7 @@ body
         font-size: 16px
         font-family: "display"
         margin-bottom: 13px
+        cursor: pointer
     &__line
         margin-bottom: 50px
     &__second-section
