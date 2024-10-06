@@ -982,6 +982,8 @@ table {
   width: 145px;
   height: 46px;
   background-color: #FEFEFE;
+  color: #2E2E2E;
+  cursor: pointer;
 }
 
 .footer__big-text {
@@ -1113,6 +1115,7 @@ table {
   background-color: transparent;
   font-family: "display";
   font-size: 16px;
+  color: #2E2E2E;
 }
 
 @media (max-width: 991px) {
@@ -1355,6 +1358,16 @@ table {
   }
   .five-section__note {
     width: 100%;
+  }
+  .five-section__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .footer__first-section {
     display: grid;
